@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()" class="container col-md-9 my-2">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      required
+      placeholder=""
+      name="title"
+      [(ngModel)]="title"
+    />
+  </div>
+  <div class="form-group">
+    <label for="description">Add description</label>
+    <input
+      type="text"
+      class="form-control"
+      id="desc"
+      required
+      placeholder=""
+      name="desc"
+      [(ngModel)]="desc"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
