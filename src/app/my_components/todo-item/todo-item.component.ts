@@ -7,6 +7,7 @@ import {Todo } from "../../Todos"
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
+  @Input() i: number;
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter
   @Output() todoCheckbox: EventEmitter<Todo> = new EventEmitter
   constructor() { }
