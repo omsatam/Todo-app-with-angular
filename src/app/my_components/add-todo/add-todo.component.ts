@@ -18,7 +18,7 @@ export class AddTodoComponent implements OnInit {
   onSubmit(){
     console.log(this.title);
     console.log(this.desc);
-    if (this.title === undefined || this.desc === undefined || this.title === " " || this.desc ===" "){
+    if ((this.title === undefined || this.desc === undefined) || (this.title === " " || this.desc ===" ")){
       alert("please add todo correctly");
     }
     else{
@@ -27,7 +27,8 @@ export class AddTodoComponent implements OnInit {
       desc: this.desc,
       active: true
     }
-
+    $('#title').textcontent = ""
+    $('#desc').textcontent = ""
     this.todoAdd.emit(todo)
   }
 }
