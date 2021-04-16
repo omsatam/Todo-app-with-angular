@@ -28,7 +28,8 @@ export class AddTodoComponent implements OnInit {
       active: true
     }
     $('#title').textcontent = ""
-    $('#desc').textcontent = ""
+    document.getElementById('title').textcontent = undefined;
+    document.getElementById('desc').textcontent = undefined;
     this.todoAdd.emit(todo)
   }
 }
