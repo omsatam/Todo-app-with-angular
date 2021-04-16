@@ -27,8 +27,8 @@ export class AddTodoComponent implements OnInit {
       desc: this.desc,
       active: true
     }
-    document.getElementById('title').textcontent = undefined;
-    document.getElementById('desc').textcontent = undefined;
+    document.getElementById('title').textContent = undefined;
+    document.getElementById('desc').textContent = undefined;
     this.todoAdd.emit(todo)
   }
 }
